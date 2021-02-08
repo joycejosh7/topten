@@ -21,7 +21,7 @@
           <% else %>    
             <li><%= link_to 'My Account', user_path(current_user) %></li>
             <li><%= link_to 'All Lists', lists_path%></li>
-            <li><%= link_to 'List Topics', "#"%></li>
+            <li><%= link_to 'List Topics', topics_path %></li>
             <li><%= link_to 'Make a List', new_list_path %></li>
             <li><%= link_to 'Log Out', logout_path, method: "delete" %></li>
           <% end %>
