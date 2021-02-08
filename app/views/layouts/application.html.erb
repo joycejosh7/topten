@@ -29,6 +29,10 @@
       </nav>
     </div>
     <br>
+    <div>
+      <%= flash[:message] if flash[:message] %>
+      <%= @error if @error %>
+    </div>
     <%= yield %>
   </body>
 </html>
