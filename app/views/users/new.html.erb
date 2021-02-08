@@ -1,0 +1,19 @@
+<h1>Become a TopTenLister!</h1>
+
+
+
+<h3>Sign up here:</h3>
+
+
+<%= form_for(@user, url: '/signup') do |f| %>
+
+  <%= f.label :username, 'Username:'%>
+  <%= f.text_field :username %> <br>
+
+  <%= f.label :password, 'Password:' %>
+  <%= f.password_field :password %> <br>
+  <br>
+
+  <%= f.submit 'Sign Up'%>
+
+<% end %>
