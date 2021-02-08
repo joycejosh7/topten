@@ -53,6 +53,11 @@ class ListsController < ApplicationController
         end
     end
 
+    def destroy
+        List.destroy(params[:id])
+        redirect_to user_path(current_user)
+    end
+
 
     private
 
