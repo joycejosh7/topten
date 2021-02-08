@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   #login route
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
-  
+
+  get '/auth/:google_oauth2/callback' => 'sessions#google'
+
   resources :topics
   resources :lists
   resources :users
