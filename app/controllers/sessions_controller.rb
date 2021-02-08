@@ -17,6 +17,11 @@ class SessionsController < ApplicationController
         end
     end
 
+    def destroy
+        session.clear
+        redirect_to root_path
+    end
+
     def google
         @user = User.find_or_create_by(username: auth['info']['email']) do |user|
             user.password = SecureRandom.hex(10)
