@@ -40,6 +40,19 @@ class ListsController < ApplicationController
         end
     end
 
+    def edit
+        @list = List.find_by_id(params[:id])
+    end
+    
+    def update
+        @list = List.find_by_id(params[:id])
+        if @list.update(list_params)
+          redirect_to list_path(@list)
+        else
+          render :edit
+        end
+    end
+
 
     private
 
