@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Top Ten
 
-Things you may want to cover:
+This is a Rails application where you can create topics and lists of 5 to 10 items in that topic. These can be your favorites or recommendations for friends.
 
-* Ruby version
+Deployment Instructions:
 
-* System dependencies
+Note: I had to run this using Node version 14.11.0 due some issues with webpacker and javascript.
 
-* Configuration
 
-* Database creation
+IMPORTANT:
+Before launching, make sure to bundle install and migrate database. 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
